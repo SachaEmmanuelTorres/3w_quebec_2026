@@ -1,0 +1,25 @@
+# Python
+.env/
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+ENV/
+
+# ChromaDB (Données locales)
+chroma_db/
+chroma_v2_db/
+
+# Modèles LLM (Plusieurs Go, ne pas uploader)
+models/
+
+# Logs et temporaires
+*.log
+presentation_temp.md
+presentation_final.md
+presentation_final_v2.md
+
+# OS
+.DS_Store
+.idea/
+.vscode/
