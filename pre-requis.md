@@ -19,12 +19,12 @@ sudo apt install python3-venv python3-pip nodejs npm libnss3 libatk1.0-0
 Pour éviter de saturer la racine (`/`), vous pouvez stocker les modèles dans le dossier du projet :
 ```bash
 # S'assurer que le dossier existe et a les bons droits
-mkdir -p /media/sacha/datas/3w_quebec_22_avril_2026/models
-chmod +x /media/sacha/datas/3w_quebec_22_avril_2026
-chmod -R 775 /media/sacha/datas/3w_quebec_22_avril_2026/models
+mkdir -p /media/sacha/datas/3w_quebec_23_avril_2026/models
+chmod +x /media/sacha/datas/3w_quebec_23_avril_2026
+chmod -R 775 /media/sacha/datas/3w_quebec_23_avril_2026/models
 
 # À exécuter avant de lancer ollama serve ou à ajouter dans votre .bashrc
-export OLLAMA_MODELS="/media/sacha/datas/3w_quebec_22_avril_2026/models"
+export OLLAMA_MODELS="/media/sacha/datas/3w_quebec_23_avril_2026/models"
 ```
 
 **3.1 Installation d'Ollama :**
@@ -35,7 +35,7 @@ curl -fsSL https://ollama.com/install.sh | sh
 **3.2 Lancement du serveur :**
 Assurez-vous que le serveur utilise le bon dossier de stockage :
 ```bash
-OLLAMA_MODELS="/media/sacha/datas/3w_quebec_22_avril_2026/models" ollama serve
+OLLAMA_MODELS="/media/sacha/datas/3w_quebec_23_avril_2026/models" ollama serve
 ```
 
 **3.3 Téléchargement des modèles :**
@@ -57,7 +57,7 @@ Le serveur Puppeteer sera installé automatiquement via `npx` lors de la premiè
 **6. Lancement pour la Démo (UQAM 23 Avril)**
 Pour garantir que l'agent utilise le bon stockage sur le disque de données :
 ```bash
-export OLLAMA_MODELS="/media/sacha/datas/3w_quebec_22_avril_2026/models"
+export OLLAMA_MODELS="/media/sacha/datas/3w_quebec_23_avril_2026/models"
 ollama serve
 ```
 *Note : Gardez ce terminal ouvert pendant l'exécution des scripts `agent_rag.py` ou `agent_rag_v2.py`.*
