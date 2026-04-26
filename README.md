@@ -19,7 +19,8 @@ L'architecture repose désormais sur l'orchestration de plusieurs services souve
 - **Dify :** Plateforme d'orchestration "Low-Code" pour la création d'agents autonomes, workflows complexes et gestion fine du RAG.
 - **ChromaDB / PostgreSQL :** Stockage vectoriel et persistance des données applicatives.
 
-## 🏗️ Schéma d'Architecture
+## 🏗️ Architecture des Agents IA
+Voici le schéma global de fonctionnement de l'infrastructure :
 
 <img src="documentation/architecture_agents_AI.png" alt="Architecture des Agents IA" width="50%"/>
 
@@ -40,6 +41,5 @@ L'architecture repose désormais sur l'orchestration de plusieurs services souve
    - **Interface Chat & RAG :** `http://localhost:3000` (Open WebUI)
    - **Visualisation des conteneurs :** `http://localhost:9090` (Cockpit)
 
-## 🏛️ Architecture des Agents IA
-<img src="documentation/architecture_agents_AI.png" alt="Architecture des Agents IA" width="50%"/>
-
+---
+*Projet réalisé dans le cadre de la conférence 3W Québec à l'UQAM.*
