@@ -49,5 +49,5 @@ Ce schéma illustre l'interaction entre les services pour la création d'agents 
 *Projet réalisé dans le cadre de la conférence 3W Québec à l'UQAM.*
 
 ## Architecture des Agents IA
-
+n![Architecture des Agents IA](documentation/architecture_agents_AI.png)
 ![Architecture des Agents IA](documentation/architecture_agents_AI.png)
