@@ -7,40 +7,9 @@ Infrastructure IA modulaire et souveraine. Chaque service est un conteneur Podma
 
 ## 🏗️ Schéma d'Architecture Global
 
-```mermaid
-graph TD
-    subgraph "Interfaces & Proxy"
-        OWUI[Open WebUI - Port 3000]
-        OC[OpenCode GUI - Port 6080]
-        ORP[OpenRouter Proxy - Port 4000]
-    end
-
-    subgraph "Services & RAG"
-        HRAG[Hermes RAG - Port 5000]
-    end
-
-    subgraph "Moteurs d'Inférence"
-        OLL[Ollama API]
-        LCPP[Llama.cpp - Port 8080]
-    end
-
-    subgraph "Stockage Centralisé"
-        MODELS[(Volume Physique: /models)]
-    end
-
-    %% Connexion Directe au Volume de Modèles (Demande Utilisateur)
-    MODELS === OLL
-    MODELS === LCPP
-    MODELS === HRAG
-    MODELS === OC
-    MODELS === ORP
-
-    %% Interactions Logiques
-    OWUI -.-> OLL
-    OWUI -.-> HRAG
-    ORP -.-> OLL
-    OC -.-> HRAG
-```
+<p align="center">
+  <img src="documentation/architecture_globale.png" alt="Architecture Globale" width="80%"/>
+</p>
 
 > **Souveraineté :** L'accès direct au volume `/models` (représenté par les lignes pleines `===`) garantit que chaque outil travaille sur la même base de connaissance locale sans duplication.
 
