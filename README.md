@@ -19,6 +19,16 @@ L'architecture repose désormais sur l'orchestration de plusieurs services souve
 - **Dify :** Plateforme d'orchestration "Low-Code" pour la création d'agents autonomes, workflows complexes et gestion fine du RAG.
 - **ChromaDB / PostgreSQL :** Stockage vectoriel et persistance des données applicatives.
 
+## 🏗️ Schéma d'Architecture
+
+Ce schéma illustre l'interaction entre les services pour la création d'agents spécialisés (Veille, Expert ISO, Analyse). 
+
+![Architecture des Agents IA](https://kroki.io/mermaid/svg/eNplkM0KwjAMhO99isnTB8HBc1dCPBjxYDzWH5BsxhWWLVP38u6GisUX-_f7_Un62XakWWmFvT1o1QvMKQeWpLZHNn7Y3Uv4fBIdz-oD6dohf6_3oIJG-Lpi0_Br9qYPl6Yqh3mankHboR5eaIvc7vVuWAXN8eCkrl9j-Z3r_EV0v9G2S_6m_TTy732T-fze1m6Ta_lzR_8-TGO3LcEewmPXD_0e2unfomrC__wvxf-_1_d38w97yI-q)
+
+*Note : Si le schéma ne s'affiche pas ci-dessus, assurez-vous d'activer le mode "Aperçu" (Preview) de votre éditeur (Ctrl+Shift+V dans VS Code).*
+
+> **Visualisation :** Le schéma ci-dessus montre comment **Dify** sert de cerveau d'orchestration pour créer des agents spécialisés (Veille Tech, Expert ISO). Ces agents utilisent **Ollama** comme moteur de réflexion et accèdent au **RAG** (via ChromaDB) ou au Web via le protocole **MCP**.
+
 ## 📂 Structure du Dépôt
 - `docker-compose.yaml` : Fichier de configuration pour lancer l'ensemble de la stack avec Podman.
 - `volumes/` : Répertoires pour la persistance des modèles Ollama et des bases de données.
@@ -37,3 +47,7 @@ L'architecture repose désormais sur l'orchestration de plusieurs services souve
 
 ---
 *Projet réalisé dans le cadre de la conférence 3W Québec à l'UQAM.*
+
+## Architecture des Agents IA
+
+![Architecture des Agents IA](documentation/architecture_agents_AI.png)
