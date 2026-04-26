@@ -5,4 +5,4 @@ WORKDIR /app
 RUN cmake -B build && cmake --build build --config Release
 EXPOSE 8090
 # Lancement par défaut, peut être surchargé par le compose.yaml
-ENTRYPOINT ["./build/bin/llama-server", "--host", "0.0.0.0", "--port", "8090", "--model", "/models/davelsphere_granite-3.0-2b-base-Q4_K_M.gguf"]
+ENTRYPOINT ["./build/bin/llama-server", "--host", "0.0.0.0", "--port", "8090", "--model", "/models/qwen2.5-3b-instruct.gguf"]
