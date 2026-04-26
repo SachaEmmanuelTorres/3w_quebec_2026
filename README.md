@@ -20,7 +20,7 @@ Infrastructure IA modulaire et souveraine. Chaque service est un conteneur Podma
 
 ## 🚀 Lancement Rapide
 ```bash
-cd /media/sacha/datas/3w_quebec_23_avril_2026
+cd "votre-dossier-de-travail¨ 
 podman-compose up -d
 ```
 Visualisation système : [http://localhost:9090](http://localhost:9090) (Cockpit)
