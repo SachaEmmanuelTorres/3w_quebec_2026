@@ -23,3 +23,6 @@ presentation_final_v2.md
 .DS_Store
 .idea/
 .vscode/
+script-interaction-model/token_langchain.md
+.gitignore
+script-interaction-model/token_hugging.md
